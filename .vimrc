@@ -184,6 +184,7 @@ syntax on
 
 " black
 let g:black_linelength=120
+let g:black_virtualenv='~/.black'
 
 " airline
 let g:airline#extensions#tabline#enabled=1
