@@ -1,0 +1,95 @@
+[core]
+	editor = vim
+[user]
+	name = Brandon Jaus
+	username = bjaus
+[push]
+	default = simple
+[credential]
+	helper = cache --timeout 100000
+[color]
+	ui = auto
+[color "branch"]
+	current = yellow bold
+	local = green bold
+	remote = red bold
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[color "status"]
+	add = green bold
+	changed = yellow bold
+	untracked = red bold
+[diff]
+	tool = vimdiff
+[alias]
+	# add
+	a = add
+	aa = add --all
+	# branch
+	b = branch
+	ba = branch -a
+	bm = branch -m
+	br = branch -r
+	bd = branch -d
+	bdd = brandon -D
+	bvv = branch -vv
+	# checkout
+	o = checkout
+	ob = checkout -b
+	# clone
+	cl = clone
+	# commit
+	c = commit
+	cm = commit -m
+	cv = commit -v
+	# config
+	alias = config --get-regexp ^alias.
+	# diff
+	d = diff
+	# fetch
+	f = fetch
+	fv = fetch -v
+	fo = fetch origin
+	fu = fetch upstream
+	# log
+	l = log
+	ll = log --oneline
+	lg = log --oneline --graph --decorate
+	# merge
+	m = merge
+	# pull
+	pl = pull
+	plv = pull -v
+	# push
+	ps = push
+	# rebase
+	rb = rebase
+	# remote
+	r = remote
+	ra = remote add
+	rn = remote rename
+	rr = remote rm
+	rs = remote show
+	rso = remote show origin
+	rsu = remote show upstream
+	rv = remote -v
+	# remove
+	rmc = rm --cached
+	rmf = rm -f
+	rmrf = rm -r -f
+	# reset
+	re = reset
+	# stash
+	sa = stash apply
+	sc = stash clear
+	sd = stash drop
+	sl = stash list
+	sp = stash pop
+	ss = stash save
+	# status
+	s = status
+	sb = status -s -b
