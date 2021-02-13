@@ -10,7 +10,6 @@ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'nvie/vim-flake8'
 Plug 'preservim/nerdcommenter'
-Plug 'psf/black', { 'branch': 'stable' }
 Plug 'qpkorr/vim-bufkill'
 Plug 'scrooloose/nerdtree'
 Plug 'terryma/vim-multiple-cursors'
@@ -23,24 +22,9 @@ Plug 'vim-scripts/indentpython.vim'
 Plug 'vim-scripts/nginx.vim'
 Plug 'vim-syntastic/syntastic'
 
-"Plug 'SirVer/ultisnips'
-"Plug 'Valloric/YouCompleteMe'
-"Plug 'alvan/vim-closetag'
 "Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-"Plug 'honza/vim-snippets'
-"Plug 'ivanov/vim-ipython'
-"Plug 'jmcomets/vim-pony'
-"Plug 'junegunn/fzf'
-"Plug 'kien/ctrlp.vim'
-"Plug 'lambdalisue/vim-django-support'
-"Plug 'leafoftree/vim-vue-plugin'
-"Plug 'mattn/emmet-vim'
-"Plug 'mxw/vim-jsx'
-"Plug 'pangloss/vim-javascript'
-"Plug 'skywind3000/asyncrun.vim'
+"Plug 'psf/black', { 'branch': 'stable' }
 "Plug 'turbio/bracey.vim'
-"Plug 'tweekmonster/django-plus.vim'
-"Plug 'w0rp/ale'
 
 call plug#end()
 
@@ -183,8 +167,8 @@ let python_highlight_all=1
 syntax on
 
 " black
-let g:black_linelength=120
-let g:black_virtualenv='~/.black'
+"let g:black_linelength=120
+"let g:black_virtualenv='~/.black'
 
 " airline
 let g:airline#extensions#tabline#enabled=1
@@ -232,7 +216,7 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <leader>a :NERDTreeToggle<cr>
-nnoremap <leader>b :Black<cr>
+"nnoremap <leader>b :Black<cr>
 nnoremap <leader>h :nohlsearch<cr>
 nnoremap <leader>l :IndentLinesToggle<cr>
 nnoremap <leader>n :call NumberToggle()<cr>
