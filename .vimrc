@@ -10,6 +10,7 @@ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'nvie/vim-flake8'
 Plug 'preservim/nerdcommenter'
+Plug 'psf/black', { 'branch': 'stable' }
 Plug 'qpkorr/vim-bufkill'
 Plug 'scrooloose/nerdtree'
 Plug 'terryma/vim-multiple-cursors'
@@ -181,6 +182,9 @@ colorscheme desertink
 let python_highlight_all=1
 syntax on
 
+" black
+let g:black_linelength=120
+
 " airline
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#formatter='default'
@@ -221,19 +225,20 @@ endfunc
 " --- key remap
 let mapleader=";"  " change leader key
 
+nnoremap <C-@> :BD<cr>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
-nnoremap <C-@> :BD<cr>
 nnoremap <leader>a :NERDTreeToggle<cr>
+nnoremap <leader>b :Black<cr>
 nnoremap <leader>h :nohlsearch<cr>
 nnoremap <leader>l :IndentLinesToggle<cr>
 nnoremap <leader>n :call NumberToggle()<cr>
 nnoremap <space><space> za
-nnoremap ]h <Plug>(GitGutterNextHunk)
 nnoremap [h <Plug>(GitGutterPrevHunk)
 nnoremap [w :PrevTrailingWhitespace<CR>
+nnoremap ]h <Plug>(GitGutterNextHunk)
 nnoremap ]w :NextTrailingWhitespace<CR>
 nnoremap gn :bn<cr>
 nnoremap gp :bp<cr>
