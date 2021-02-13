@@ -2,6 +2,7 @@
 	editor = vim
 [user]
 	name = Brandon Jaus
+	email = brandon.jaus@gmail.com
 	username = bjaus
 [push]
 	default = simple
