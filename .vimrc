@@ -108,7 +108,6 @@ au BufNewFile,BufRead *.json,*.yaml,*.go,*.c,*.cpp,*.js,*.vue,*.html,*.css
   \ set autoindent |
   \ set expandtab
 
-" --- whitespace
 au BufNewFile,BufRead *.py
   \ set softtabstop=4 |
   \ set shiftwidth=4 |
@@ -190,9 +189,9 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " vim-better-whitespace
 highlight ExtraWhitespace ctermbg=red
+"let g:strip_max_file_size=500
 let g:better_whitespace_enabled=1
 let g:better_whitespace_on_save=1
-"let g:strip_max_file_size=500
 let g:strip_whitelines_at_eof=1
 
 " --- functions
@@ -210,21 +209,21 @@ endfunc
 " --- key remap
 let mapleader=";"  " change leader key
 
+"nnoremap <leader>b :Black<cr>
 nnoremap <C-@> :BD<cr>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <leader>a :NERDTreeToggle<cr>
-"nnoremap <leader>b :Black<cr>
 nnoremap <leader>h :nohlsearch<cr>
 nnoremap <leader>l :IndentLinesToggle<cr>
 nnoremap <leader>n :call NumberToggle()<cr>
 nnoremap <space><space> za
 nnoremap [h <Plug>(GitGutterPrevHunk)
-nnoremap [w :PrevTrailingWhitespace<CR>
+nnoremap [w :PrevTrailingWhitespace<cr>
 nnoremap ]h <Plug>(GitGutterNextHunk)
-nnoremap ]w :NextTrailingWhitespace<CR>
+nnoremap ]w :NextTrailingWhitespace<cr>
 nnoremap gn :bn<cr>
 nnoremap gp :bp<cr>
 
