@@ -102,7 +102,7 @@ set showmatch  " when inserting a bracket, briefly jump to its match
 "set autoindent  " automatically set the indent of a new line
 "set copyindent  " copy whitespace for indenting from previous line
 
-au BufNewFile,BufRead *.json,*.yaml,*.go,*.c,*.cpp,*.js,*.vue,*.html,*.css
+au BufNewFile,BufRead *.json,*.yml,*.yaml,*.go,*.c,*.cpp,*.js,*.vue,*.html,*.css
   \ set softtabstop=2 |
   \ set shiftwidth=2 |
   \ set autoindent |
