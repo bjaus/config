@@ -180,7 +180,7 @@ let g:SimpylFold_fold_docstring=1
 let g:SimpylFold_fold_import=1
 
 " nerdtree
-let NERDTreeIgnore=['\.pyc$', '\~$', '\.swp$', '__pycache__', '.venv', 'venv', 'node_modules']
+let NERDTreeIgnore=['\.pyc$', '\~$', '\.swp$', '__pycache__', '.venv', 'venv', 'node_modules', '.egg-info', 'build', 'source']
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd StdinReadPre * let s:std_in=1
